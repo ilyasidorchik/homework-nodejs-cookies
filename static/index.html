@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework. Node.js. Cookies</title>
+    <link rel="stylesheet" href="../theme.css" />
+  </head>
+  <body>
+    <div class="Page">
+      <div class="Page-Desc">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, iure.
+      </div>
+      <button class="Page-Button Page-Button_dark">Включить тёмную тему</button>
+      <button class="Page-Button Page-Button_light">
+        Включить светлую тему
+      </button>
+    </div>
+    <script src="./use-night-theme.js"></script>
+    <script>
+      const buttonTurnDarkOn = document.querySelector('.Page-Button_dark');
+      const buttonTurnLightOn = document.querySelector('.Page-Button_light');
+
+      buttonTurnDarkOn.addEventListener('click', () => useNightTheme(true));
+      buttonTurnLightOn.addEventListener('click', () => useNightTheme(false));
+    </script>
+  </body>
+</html>
